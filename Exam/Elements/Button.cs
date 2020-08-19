@@ -9,13 +9,13 @@ namespace Exam.Elements
 {
     public class Button : IElement
     {
-        public Button(int width,int height) : base()
+        public Button() { }
+        public Button(int width,int height)
         {
             this.Width = width;
             this.Height = height;
-        }
-        public Button()
-        {
+
+            
             Click += OnClick;
             MouseDown += OnMouseDown;
             MouseUp += OnMouseUp;
